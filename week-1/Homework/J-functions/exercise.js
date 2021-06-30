@@ -6,11 +6,11 @@ function halve(number) {
 var result = halve(12);
 console.log(result);
 
-var result = halve(2847438);
+result = halve(2847438);
 console.log(result);
 
-var result = halve(56);
+result = halve(56);
 console.log(result);
 
-var result = halve(2);
+result = halve(2);
 console.log(result);
