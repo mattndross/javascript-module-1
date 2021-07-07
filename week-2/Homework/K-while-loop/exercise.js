@@ -7,8 +7,14 @@
 */
 
 let n = 10;
-
 function sumTillNum(num){
+	let i = 0;
+	let j = 0;
+	while (i <= n) {
+		j = j + i;
+		i++;
+	}
+	return j;
 	//your code here
 }
 
