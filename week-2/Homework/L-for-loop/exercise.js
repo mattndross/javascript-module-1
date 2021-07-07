@@ -9,6 +9,11 @@
 let n = 10;
 
 function sumTillNum(num){
+	let j = 0;
+	for (let i = 0; i <= num; i++){
+		 j = j + i;
+	}
+	return j;
 	//your code here
 }
 
