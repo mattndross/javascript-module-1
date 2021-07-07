@@ -4,12 +4,12 @@ var mentor3 = "Mimi";
 var mentor4 = "Rob";
 var mentor5 = "Yohannes";
 
-function shoutyGreeting(mentor) {
+function getShoutyGreeting(mentor) {
     return `hello ${mentor}`.toUpperCase();
 }
 
-console.log(shoutyGreeting(mentor1));
-console.log(shoutyGreeting(mentor2));
-console.log(shoutyGreeting(mentor3));
-console.log(shoutyGreeting(mentor4));
-console.log(shoutyGreeting(mentor5));
+console.log(getShoutyGreeting(mentor1));
+console.log(getShoutyGreeting(mentor2));
+console.log(getShoutyGreeting(mentor3));
+console.log(getShoutyGreeting(mentor4));
+console.log(getShoutyGreeting(mentor5));
