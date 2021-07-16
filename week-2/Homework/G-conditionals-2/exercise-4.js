@@ -9,13 +9,14 @@
 */
 
 function containsCode(sentence) {
-  return sentence.split(" ").includes("code");
+  return sentence.includes("code");
+  //return sentence.split(" ").includes("code");
 }
 
 /* 
 DO NOT EDIT BELOW THIS LINE
 --------------------------- */
-var sentence1 = "code your future";
+var sentence1 = "Acode, your future";
 var sentence2 = "draw your future";
 var sentence3 = "design your future";
 

@@ -6,19 +6,35 @@
 */
 
 function isNegative(num) {
-  console.log(num < 0)  
+  if (num < 0){
+    return true;
+  } 
+  return false
+  //console.log(num < 0)  
 }
 
 function isBetween5and10(num) {
-  console.log(num <= 10 && num >= 5)
+  if (num <= 10 && num >= 5) {
+    return true;
+  }
+  return false
+  //console.log(num <= 10 && num >= 5)
 }
 
 function isShortName(name) {
-  console.log(name.length < 7)
+  if (name.length < 7) {
+    return true;
+  }
+  return false
+  //console.log(name.length < 7)
 }
 
 function startsWithD(name) {
-  console.log(name[0].toUpperCase() === 'D')
+  if (name[0].toUpperCase() === 'D') {
+    return true
+  }
+  return false
+  //console.log(name[0].toUpperCase() === 'D')
 }
 /* 
   DO NOT EDIT BELOW THIS LINE

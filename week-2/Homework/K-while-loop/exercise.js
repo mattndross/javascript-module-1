@@ -8,9 +8,9 @@
 
 let n = 10;
 function sumTillNum(num){
-	let i = 0;
+	let i = 1;
 	let j = 0;
-	while (i <= n) {
+	while (i <= num) {
 		j = j + i;
 		i++;
 	}

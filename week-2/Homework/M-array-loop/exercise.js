@@ -14,12 +14,14 @@ const daysOfWeek = [
 ];
 
 function getStringsWithT(arr) {
-  for (let i = 0; i < daysOfWeek.length; i++) {
-    if (daysOfWeek[i].startsWith("T")) {
-      console.log(daysOfWeek[i]);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].toUpperCase().startsWith("T")) {
+      console.log(arr[i]);
     }
   }
+  
 }
 
-console.log(daysOfWeek);
+ 
+//console.log(daysOfWeek);
 console.log(getStringsWithT(daysOfWeek));

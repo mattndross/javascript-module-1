@@ -6,12 +6,12 @@
 */
 
 var studentCount = 16;
-var mentorCount = 9;
+var mentorCount = 14;
 var moreStudentsThanMentors = studentCount > mentorCount; // finish this statement
 console.log(moreStudentsThanMentors);
 
 var roomMaxCapacity = 25;
-var enoughSpaceInRoom = (mentorCount + studentCount) <= roomMaxCapacity; // finish this statement
+var enoughSpaceInRoom =  roomMaxCapacity <= mentorCount + studentCount; // finish this statement
 console.log(enoughSpaceInRoom);
 
 var personA = "Daniel";
