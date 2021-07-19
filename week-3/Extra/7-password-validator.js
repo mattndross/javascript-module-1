@@ -21,9 +21,21 @@ Expected Result:
 PasswordValidationResult=  [false, false, false, false, true]
 
 */
+function findDuplicated(arr) {
+  let newArr = []
+  for (let i = 0; i < arr.length ; i++) {
+    if (newArr.includes(arr[i])) {
+      newArr.push('duplicated value')
+    } else {
+      newArr.push(arr[i])
+    }
+  }
+    return newArr
+}
 
 function validatePasswords(passwords) {
-
+  const regexp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!#$%.*&]).{5,}$/
+  return findDuplicated(passwords).map(pass => regexp.test(pass));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

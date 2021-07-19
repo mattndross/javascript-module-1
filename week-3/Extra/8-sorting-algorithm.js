@@ -14,8 +14,56 @@ You don't have to worry about making this algorithm work fast! The idea is to ge
 "think" like a computer and practice your knowledge of basic JavaScript.
 */
 
-function sortAges(arr) {}
+function getAges(arr){ //filters the given array so it returns only the numbers
+  return arr.filter(item => typeof(item) === 'number');  
+}
 
+const random = ['otro', 89, 34, 30, 'vlavl', 34, 23, 17, 50, 23, '10', 25, null] //A random array to test my functions
+console.log(getAges(random))
+
+
+/* I'm trying differents algorithms that sort numbers. 
+I found them in this medium:
+https://medium.com/@anny.huynh32/sorting-algorithm-e3f06c735dfb */
+
+
+function bubbleSort(arr) {   //Bubble sort algorithm 
+  const ages = getAges(arr);
+
+  for (let j = 0; j < ages.length; j++) {
+    for (let i = 0; i < ages.length; i++) {
+      if (ages[i] > ages[i + 1]) {
+        const t = ages[i];
+        ages[i] = ages[i + 1];
+        ages[i + 1] = t;
+      }
+    }
+  }
+  return ages
+}
+console.log(bubbleSort(random))
+
+function sortAges(arr) {
+  const ages = getAges(arr);
+  
+
+  for (let i = 0; i < ages.length; i++) {
+    let smallest = ages[i]
+    let swaper = null;
+    for (let j = i + 1; j < ages.length; j++) {
+        if (smallest > ages[j]) {
+          swaper = smallest;
+          smallest = ages[j];
+          ages[j] = swaper;
+      }
+    }
+    
+    ages[i] = smallest;
+    
+  }
+  return ages
+}
+console.log(sortAges(random))
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const agesCase1 = [

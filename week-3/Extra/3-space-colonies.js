@@ -8,7 +8,9 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
+function colonisers(families) {
+  const AlfaFamilies = families.filter(family => family.includes('family') && family.startsWith('A'))
+  return AlfaFamilies
 
 }
 

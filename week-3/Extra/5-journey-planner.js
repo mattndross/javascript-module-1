@@ -7,7 +7,9 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner() {
+function journeyPlanner(locations, transport) {
+  const locationsByTransport = locations.filter(loc => loc.includes(transport)).map(loc => loc[0])
+  return locationsByTransport
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -20,6 +22,7 @@ const londonLocations = [
 ]
 
 const util = require('util');
+
 
 function test(test_name, actual, expected) {
     let status;
