@@ -19,7 +19,7 @@ function getAges(arr){ //filters the given array so it returns only the numbers
 }
 
 const random = ['otro', 89, 34, 30, 'vlavl', 34, 23, 17, 50, 23, '10', 25, null] //A random array to test my functions
-console.log(getAges(random))
+//console.log(getAges(random))
 
 
 /* I'm trying differents algorithms that sort numbers. 
@@ -43,9 +43,8 @@ function bubbleSort(arr) {   //Bubble sort algorithm
 }
 console.log(bubbleSort(random))
 
-function sortAges(arr) {
-  const ages = getAges(arr);
-  
+function selectionSort(arr) { // Selection sort algorithm
+  const ages = getAges(arr);  
 
   for (let i = 0; i < ages.length; i++) {
     let smallest = ages[i]
@@ -63,7 +62,26 @@ function sortAges(arr) {
   }
   return ages
 }
-console.log(sortAges(random))
+console.log(selectionSort(random))
+
+function sortAges(arr) { // insertion sort algorithm
+  let ages = getAges(arr);
+
+  for (let i = 0; i < ages.length; i++) {
+    let current = ages[i];
+    for (let j = 1; j <= i; j++){
+      let comparator = ages[i-j];
+      if (current < comparator) {        
+         ages[i -j +1] = comparator;
+         ages[i - j] = current
+      }      
+    }
+  }
+  return ages
+}
+
+function 
+//console.log(insertionSort(random))
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const agesCase1 = [
