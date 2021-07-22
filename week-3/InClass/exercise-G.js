@@ -1,7 +1,8 @@
-agesArr = [70, 12, 45, 18, 17, 3]
 
-function getAgesOfWhoCanDrive(ages) {
-    return `This are the birth years of people who can drive ${ages.filter(ages => age >= 17)}`
+birthYearsArr = [2004, 2000, 2006, 1993, ];
+
+function getAgesOfWhoCanDrive(birthYears) {
+    return `This are the birth years of people who can drive ${birthYears.filter(birthYear => 2021 - birthYear >= 17)}`
 }
 
-console.log(getAgesOfWhoCanDrive(agesArr))
+console.log(getAgesOfWhoCanDrive(birthYearsArr))
